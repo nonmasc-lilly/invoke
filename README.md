@@ -53,3 +53,15 @@ int main() {
 compiles to only 888 bytes
 
 even further the mkgen binary included in this repository is only 3824 bytes *INCLUDING* the usage of mem.c
+
+
+Finally it would be apt to explain mkgen. Mkgen is simply used to generate a makefile that can compile invoke based C optimally. To call it properly you should do as follows:
+
+```
+./mkgen <path to output makefile> <path to input files (invoke.s invoke.h included)>
+```
+
+linker.ld must be in the same directory as the output makefile for it to work correctly.
+
+
+
